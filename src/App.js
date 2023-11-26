@@ -33,7 +33,7 @@ function App({ signOut, user }) {
               <Link>Shop</Link>
           </Flex>
           <Heading level={4} textAlign="center">
-            Welcome to PetStore
+            Welcome to (Pan American Energy) PAE PetStore
           </Heading>
           <Heading level={6} textAlign="center">
             Hello {user.username}
