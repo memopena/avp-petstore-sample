@@ -75,9 +75,9 @@ function App({ signOut, user }) {
                        
                       { roles.includes('Customer') ? (
                       <div>
-                        <ExpanderItem title="Customer role type actions" value="line-1">
-                          <Text textAlign="left" variation="info">Customers can search for pets, order pets and cancel orders. </Text><br/>
-                          <Button onClick={() => getData('/pets', 'GET')}>Search Pets</Button>
+                        <ExpanderItem title="User role type actions" value="line-1">
+                          <Text textAlign="left" variation="info">Users can search for items, order items and cancel items. </Text><br/>
+                          <Button onClick={() => getData('/pets', 'GET')}>Search Items</Button>
                           <Button onClick={() => getData('/order/create', 'POST')}>Place Order</Button>
                           <Button onClick={() => getData('/order/get/order-1', 'GET')}>View Order</Button>
                         </ExpanderItem>
@@ -87,7 +87,7 @@ function App({ signOut, user }) {
                      
                       {roles.includes('Pet-Groomer-Role') ? (
                       <div>
-                        <TextField onChange={e => storeId = e.target.value} placeholder="PetStore Id eg. petstore-london" label="Enter PetStore Identifier" /><br/>
+                        <TextField onChange={e => storeId = e.target.value} placeholder="Store Id eg. store-london" label="Enter Store Identifier" /><br/>
                         <Divider orientation="horizontal" />
                         <ExpanderItem title="Pet Groomer role actions" value="line-2">
                           <Text textAlign="left" variation="info">Pet Groomers can add pets, edit pet details and  get order details  .</Text><br/>
